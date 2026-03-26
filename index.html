@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Non-Rigid 3D Shape Correspondences</title>
+
+    <meta name="description" content="Non-Rigid 3D Shape Correspondences: From Foundations to Open Challenges and Opportunities"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        .author-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px 28px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .author-entry {
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .resource-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .resource-buttons li {
+            list-style: none;
+        }
+
+        .topic-tags {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .topic-tags span {
+            display: inline-block;
+            margin: 6px 6px;
+            padding: 6px 12px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            background: #f8f8f8;
+            font-size: 15px;
+        }
+        h3 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container" id="main">
+
+    <div class="row">
+        <h2 class="col-md-12 text-center">
+            <b>Non-Rigid 3D Shape Correspondences</b>:<br>
+            From Foundations to Open Challenges and Opportunities<br>
+            <small>
+                Eurographics STAR 2026
+            </small>
+        </h2>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div class="author-list">
+                <div class="author-entry">
+                    A. Zhuravlev<sup>1</sup>⋆
+                </div>
+                <div class="author-entry">
+                    L. Bastian<sup>6,7,8</sup>⋆
+                </div>
+                <div class="author-entry">
+                    D. Cao<sup>2,3</sup>
+                </div>
+                <div class="author-entry">
+                    N. El Amrani<sup>2,3</sup>
+                </div>
+                <div class="author-entry">
+                    P. Roetzer<sup>2,3</sup>
+                </div>
+                <div class="author-entry">
+                    V. Ehm<sup>7,8</sup>
+                </div>
+                <div class="author-entry">
+                    R. Marin<sup>7,8</sup>
+                </div>
+                <div class="author-entry">
+                    H. Nishizawa<sup>4</sup>
+                </div>
+                <div class="author-entry">
+                    S. Morishima<sup>5</sup>
+                </div>
+                <div class="author-entry">
+                    C. Theobalt<sup>1</sup>
+                </div>
+                <div class="author-entry">
+                    N. Navab<sup>7,8</sup>
+                </div>
+                <div class="author-entry">
+                    D. Cremers<sup>7,8</sup>
+                </div>
+                <div class="author-entry">
+                    F. Bernard<sup>2,3</sup>
+                </div>
+                <div class="author-entry">
+                    Z. Lähner<sup>2,3</sup>
+                </div>
+                <div class="author-entry">
+                    V. Golyanik<sup>1</sup>
+                </div>
+            </div>
+
+            <p style="margin-top: 10px; line-height: 1.8; text-align: center">
+                <sup>1</sup>MPI for Informatics &nbsp;
+                <sup>2</sup>University of Bonn &nbsp;
+                <sup>3</sup>Lamarr Institute &nbsp;
+                <sup>4</sup>Waseda University &nbsp;
+                <sup>5</sup>Waseda Research Institute for Science and Engineering <br>
+                <sup>6</sup>Imperial College London &nbsp;
+                <sup>7</sup>Technical University of Munich &nbsp;
+                <sup>8</sup>Munich Center for Machine Learning &nbsp;
+                ⋆Equal Contribution
+            </p>
+        </div>
+    </div>
+
+    <div class="row" style="padding-top: 0pt;">
+        <div class="col-md-8 col-md-offset-2 text-center">
+            <ul class="nav nav-pills nav-fill text-center resource-buttons">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="assets/Report_preview.jpg" height="60px">
+                        <h4><strong>Paper</strong></h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <!-- <hr> -->
+            <h3 class="text-center"><b>Overview</b></h3>
+            <!-- <hr> -->
+            <p style="text-align: justify" class="text-justify">
+                This state-of-the-art report surveys modern approaches to non-rigid 3D shape correspondence,
+                spanning spectral, combinatorial, and deformation-based methods. It is intended as a structured
+                entry point for researchers, practitioners, and students interested in the foundations, recent
+                advances, and open challenges of the field.
+            </p>
+
+            <div class="topic-tags">
+                <span>Spectral methods</span>
+                <span>Combinatorial methods</span>
+                <span>Deformation-based methods</span><br>
+                <span>Geometric consistency</span>
+                <span>Datasets</span>
+                <span>Partial shape matching</span>
+                <!-- <span>Zero-shot correspondence</span>
+                <span>Vision foundation models</span> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <!-- <hr> -->
+            <h3><b>Abstract</b></h3>
+            <!-- <hr> -->
+            <p style="text-align: justify" class="text-justify">
+                Estimating correspondences between deformed shape instances is a long-standing problem in computer graphics;
+                numerous applications, from texture transfer to statistical modelling, rely on recovering an accurate
+                correspondence map. Many methods have thus been proposed to tackle this challenging problem from varying
+                perspectives, depending on the downstream application. This state-of-the-art report is geared towards
+                researchers, practitioners, and students seeking to understand recent trends and advances in the field.
+                We categorise developments into three paradigms: spectral methods based on functional maps, combinatorial
+                formulations that impose discrete constraints, and deformation-based methods that directly recover a global
+                alignment. Each school of thought offers different advantages and disadvantages, which we discuss throughout
+                the report. Meanwhile, we highlight the latest developments in each area and suggest new potential research
+                directions. Finally, we provide an overview of emerging challenges and opportunities in this growing field,
+                including the recent use of vision foundation models for zero-shot correspondence and the particularly
+                challenging task of matching partial shapes.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <!-- <hr> -->
+            <h3><b>Status</b></h3>
+            <!-- <hr> -->
+            <p style="text-align: justify" class="text-justify">
+                This page is currently under construction. A fuller version with figures, taxonomy, citation information,
+                and curated paper links will be added soon.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
